@@ -8,6 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Game theme colors */
+    --game-sky-start: 186 85% 67%;
+    --game-sky-end: 197 92% 85%;
+    --game-ground: 120 65% 35%;
+    --game-pipe: 120 45% 30%;
+    --game-bird: 42 96% 56%;
+    --game-bird-shadow: 30 100% 45%;
+    
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 

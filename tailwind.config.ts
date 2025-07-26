@@ -19,6 +19,12 @@ export default {
 		},
 		extend: {
 			colors: {
+				'game-sky-start': 'hsl(var(--game-sky-start))',
+				'game-sky-end': 'hsl(var(--game-sky-end))',
+				'game-ground': 'hsl(var(--game-ground))',
+				'game-pipe': 'hsl(var(--game-pipe))',
+				'game-bird': 'hsl(var(--game-bird))',
+				'game-bird-shadow': 'hsl(var(--game-bird-shadow))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -84,11 +90,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'bird-flap': {
+					'0%': { transform: 'rotate(-15deg)' },
+					'50%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(-15deg)' }
+				},
+				'pipe-move': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100vw)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bird-flap': 'bird-flap 0.15s ease-in-out',
+				'pipe-move': 'pipe-move 3s linear infinite'
 			}
 		}
 	},
